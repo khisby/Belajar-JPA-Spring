@@ -10,6 +10,7 @@ import java.util.List;
 
 @RequestMapping
 @CrossOrigin
+@RestController
 public class ProductController {
 
     @Autowired
@@ -22,7 +23,7 @@ public class ProductController {
 
     @GetMapping("/price")
     public List<Product> findGreaterThenPrice(@RequestParam("price")BigDecimal price){
-        return productRepository.findByProductPriceGreaterThen(price);
+        return productRepository.findByProductPriceGreaterThan(price);
     }
 
     @PostMapping("/")

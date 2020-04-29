@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Transactional
+@RestController
 public class CategoryController {
 
     @Autowired

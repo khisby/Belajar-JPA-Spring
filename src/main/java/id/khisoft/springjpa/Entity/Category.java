@@ -18,13 +18,13 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "categoriId")
+    @Column(name = "categori_id")
     private Long id;
 
-    @Column(name = "categoryName")
+    @Column(name = "category_name", unique = true)
     private String Category;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "categoryId")
-    private List<Product> product;
+    @JoinColumn(name = "category_id")
+    private List<Product> products;
 }
