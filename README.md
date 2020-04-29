@@ -1,2 +1,2 @@
 # Belajar-JPA-Spring
-Belajar JPA Spring pada Merdeka Cloud Masterclass
+Belajar JPA Spring with Swagger API Docummentation pada Merdeka Cloud Masterclass
