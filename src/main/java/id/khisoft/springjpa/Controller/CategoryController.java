@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @Transactional
 @RestController
+@CrossOrigin
 public class CategoryController {
 
     @Autowired
